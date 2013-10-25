@@ -12,6 +12,7 @@ Obtaining access tokens
 *Only user token allows to post events on behalf of the user*
 
 App token:
+
 1. Go to: https://developers.facebook.com/apps
 2. Click: "Create New App"
 3. Provide an app name, then click "Continue"
