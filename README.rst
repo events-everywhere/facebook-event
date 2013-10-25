@@ -19,13 +19,14 @@ App token:
 4. Token is available at: https://developers.facebook.com/tools/access_token/
 
 Extended user token (complete above before proceeding):
-Go to: https://developers.facebook.com/tools/explorer
-Select your application and click: "Get Access Token"
-Check: "user_events" (in "User Data Permissions") and "create_event" (in "Extended Permissions")
-Click: "Get Access Token"
+
+1. Go to: https://developers.facebook.com/tools/explorer
+2. Select your application and click: "Get Access Token"
+3. Check: "user_events" (in "User Data Permissions") and "create_event" (in "Extended Permissions")
+4. Click: "Get Access Token"
 
 This is short-lived token (which expires in about 2 hours). 
-To extend it (to about 2 months) you need use facebook-extend-access-token.py script together with the 
+To extend it (to about 2 months) you need facebook-extend-access-token.py script together with the 
 just generated short-lived token, app id and app secret (https://developers.facebook.com/apps):
 
 .. code-block:: bash
