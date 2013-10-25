@@ -4,7 +4,7 @@ Simple Python command line script for creating, updating and displaying Facebook
 
 Requirements
 ------------
-`facepy <https://pypi.python.org/pypi/facepy>`
+`facepy <https://pypi.python.org/pypi/facepy>`_, 
 `requests <https://pypi.python.org/pypi/requests>` (required by facepy)
 
 Obtaining access tokens
