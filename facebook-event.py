@@ -5,7 +5,7 @@
 import argparse
 import json
 from datetime import datetime
-from time import strftime, localtime
+from dateutil.tz import tzlocal
 from facepy import GraphAPI
 
 
@@ -55,8 +55,9 @@ def urlId(url):
 
 
 def convertTime(dtStr):
-    dtime = datetime.strptime(dtStr, '%Y-%m-%d %H:%M')
-    return dtime.isoformat() + strftime('%z', localtime())
+    dt = datetime.strptime(dtStr, '%Y-%m-%d %H:%M')
+    return datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute,
+                    tzinfo=tzlocal()).isoformat()
 
 
 def readConfig(filePath):
